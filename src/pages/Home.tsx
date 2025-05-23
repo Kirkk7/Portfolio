@@ -240,17 +240,15 @@ const Home = () => {
                 title: "Personal Portfolio",
                 description:
                   "A responsive full-stack web developer portfolio with project showcases and contact integration",
-                image:
-                  "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                image: "portfolio.png",
                 tags: ["React", "TypeScript", "Framer Motion"],
-                link: "https://jinarthinfotech.com/",
+                link: "#",
               },
               {
                 title: "Jinarth Infotech Website",
                 description:
                   "A modern website for a software development company featuring service highlights and interactive UI.",
-                image:
-                  "https://images.pexels.com/photos/6956800/pexels-photo-6956800.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                image: "jn.png",
                 tags: ["React", "Framer Motion", "GSAP"],
                 link: "https://jinarthinfotech.com/",
               },
@@ -258,8 +256,7 @@ const Home = () => {
                 title: "Hd Globe Trade Website",
                 description:
                   "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
-                image:
-                  "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+                image: "hdglobe.png",
                 tags: ["React", "Smooth Scrolling", "Animations"],
                 link: "https://hdglobetrade.com/",
               },

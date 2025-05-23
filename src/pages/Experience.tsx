@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
 import SectionTitle from "../components/shared/SectionTitle";
 import Button from "../components/shared/Button";
-
+import { useNavigate } from "react-router-dom";
 const Experience = () => {
+  const navigate = useNavigate();
   const experiences = [
     {
       id: 1,
@@ -230,9 +231,15 @@ const Experience = () => {
               Want to know more about my experience or discuss potential
               opportunities?
             </p>
-            <Button variant="primary" icon={Briefcase}>
-              Contact Me
-            </Button>
+            <div className="flex justify-center">
+              <Button
+                variant="primary"
+                icon={Briefcase}
+                onClick={() => navigate("/contact")}
+              >
+                Contact Me
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>
