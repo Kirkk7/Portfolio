@@ -20,6 +20,7 @@ const Experience = () => {
         "Enhanced UX through user testing and feedback.",
       ],
       tech: ["Figma", "Plugins", "Wireframing", "Prototyping"],
+      website: "https://nativestech.in/",
       logo: "https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
@@ -36,6 +37,7 @@ const Experience = () => {
         "Optimized database queries, improving app performance by 30%.",
       ],
       tech: ["React", "MongoDB", "Express", "Node.js", "ASP.NET", "Next.js"],
+      website: "https://jinarthinfotech.com/",
       logo: "https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
@@ -58,6 +60,7 @@ const Experience = () => {
         "CSS",
         "JavaScript",
       ],
+      website: "https://hmbyte.com/",
       logo: "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
@@ -103,11 +106,13 @@ const Experience = () => {
               My professional journey through the tech industry, showcasing
               roles, responsibilities, and key achievements over the years.
             </p>
-            <a href="/Kirtan_Kapatel.pdf" download>
-              <Button variant="primary" icon={Briefcase}>
-                Download Resume
-              </Button>
-            </a>
+            <div className="flex justify-center">
+              <a href="/Kirtan_Kapatel.pdf" download>
+                <Button variant="primary" icon={Briefcase}>
+                  Download Resume
+                </Button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -152,7 +157,15 @@ const Experience = () => {
                       </div>
                       <div>
                         <h3 className="font-bold text-xl">{experience.role}</h3>
-                        <p className="text-primary-500">{experience.company}</p>
+                        <a
+                          href={experience.website}
+                          target="_blank"
+                          className="cursor-pointer"
+                        >
+                          <p className="text-primary-500 cursor-pointer">
+                            {experience.company}
+                          </p>
+                        </a>
                       </div>
                     </div>
 

@@ -1,26 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  cursor: none;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 :root {
   --cursor-size: 20px;
 }
 
-/* * {
-} */
+* {
+  cursor: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  @apply bg-dark-900 text-white;
+  @apply bg-dark-900 text-white min-h-screen p-0 m-0;
   overflow-x: hidden;
 }
 
@@ -130,4 +124,15 @@ body {
   .interactive {
     cursor: pointer;
   }
+}
+
+/* Ensure consistent spacing for main content */
+#root {
+  @apply flex flex-col min-h-screen;
+}
+
+/* Fix potential padding issues in Chrome */
+.container {
+  @apply px-4 w-full mx-auto;
+  max-width: 1280px; /* or your desired max-width */
 }
