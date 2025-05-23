@@ -1,14 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --cursor-size: 20px;
 }
 
-* {
-  cursor: none;
-}
+/* * {
+} */
 
 body {
   @apply bg-dark-900 text-white;
@@ -24,7 +33,7 @@ body {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   @apply block absolute -bottom-2 left-0 w-2/3 h-1 bg-primary-600 rounded;
 }
 
@@ -56,11 +65,12 @@ body {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 ease-in-out;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   @apply w-full;
 }
 
@@ -93,7 +103,7 @@ body {
 }
 
 .timeline-container::before {
-  content: '';
+  content: "";
   @apply absolute left-0 md:left-1/2 top-0 h-full w-1 bg-gradient-to-b from-primary-700 to-secondary-700 transform md:-translate-x-1/2;
 }
 
@@ -110,12 +120,14 @@ body {
   .custom-cursor {
     display: none;
   }
-  
+
   * {
     cursor: auto;
   }
-  
-  a, button, .interactive {
+
+  a,
+  button,
+  .interactive {
     cursor: pointer;
   }
 }
