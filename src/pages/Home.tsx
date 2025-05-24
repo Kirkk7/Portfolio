@@ -1,11 +1,28 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import * as Lucide from "lucide-react";
 import { Link } from "react-router-dom";
 import Button from "../components/shared/Button";
 import { FloatingPaths } from "../components/layout/FloatingPaths";
 // import FloatingBubbles from "../components/layout/FloatingBubbles";
+const images = [
+  // { src: "/kk1.jpg", shape: "rounded-xl" },
+  { src: "/kk2.jpg", shape: "rounded-xl" },
+  { src: "/kk3.jpg", shape: "rounded-2xl" },
+  { src: "/kk4.jpg", shape: "rounded-none" },
+];
 const Home = () => {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000); // Change every 2 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentImage = images[index];
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -180,11 +197,18 @@ const Home = () => {
             >
               <div className="-left-1.5 relative w-full h-[500px] overflow-hidden rounded-2xl ">
                 <div className=" absolute inset-0 bg-gradient-to-b from-primary-800/40 to-secondary-800/40 mix-blend-multiply z-10 rounded-2xl"></div>
-                <img
-                  src="kk3.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Developer portrait"
-                  className="w-full h-full object-cover rounded-2xl "
-                />
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={currentImage.src}
+                    src={currentImage.src}
+                    alt="Developer portrait"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 1.05 }}
+                    transition={{ duration: 0.6 }}
+                    className={`w-full h-full object-cover ${currentImage.shape}`}
+                  />
+                </AnimatePresence>
               </div>
 
               {/* Tech stack floating card */}

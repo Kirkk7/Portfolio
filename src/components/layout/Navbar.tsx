@@ -59,7 +59,9 @@ const Navbar = () => {
             <div className="relative">
               <Terminal className="text-primary-500" size={32} />
             </div>
-            <span className="gradient-text">Kirtan Kapatel</span>
+            <span className="gradient-text text-xl md:text-2xl lg:text-3xl">
+              Kirtan Kapatel
+            </span>
             {/* <Code
               className="text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
               size={18}
