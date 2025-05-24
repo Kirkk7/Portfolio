@@ -59,7 +59,7 @@ const projects = [
     title: "Pharmacy Management System",
     description:
       "A complete pharmacy management system with inventory, billing, and user authentication built using HTML, CSS, JavaScript, and PHP.",
-    image: "pharma.png",
+    image: "pharma1.png",
     categories: ["fullstack"],
     tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     demoLink: "#",

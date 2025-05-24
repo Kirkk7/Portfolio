@@ -814,9 +814,9 @@ const About = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <div>
+            <div className="container mx-auto px-4">
               <motion.h1
-                className="font-heading text-4xl md:text-5xl font-bold mb-6"
+                className="flex justify-center md:justify-start font-heading text-4xl md:text-5xl font-bold mb-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -824,7 +824,7 @@ const About = () => {
                 About <span className="gradient-text">Me</span>
               </motion.h1>
               <motion.p
-                className="text-dark-200 text-lg mb-6"
+                className="text-dark-200 text-lg mb-6 text-justify md:text-start"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
@@ -834,7 +834,7 @@ const About = () => {
                 Node.js, and modern web technologies.
               </motion.p>
               <motion.p
-                className="text-dark-200 text-lg mb-8"
+                className="text-dark-200 text-lg mb-8 text-justify md:text-start"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -848,9 +848,11 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <Button variant="primary" icon={Briefcase}>
-                  Hire Me
-                </Button>
+                <div className="flex justify-center md:justify-start">
+                  <Button variant="primary" icon={Briefcase}>
+                    Hire Me
+                  </Button>
+                </div>
               </motion.div>
             </div>
             <motion.div
@@ -861,7 +863,7 @@ const About = () => {
             >
               <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/5324947/pexels-photo-5324947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="kk4.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                 />
@@ -1129,21 +1131,21 @@ const About = () => {
                   {
                     title: "Nominated for Best Project (2024)",
                     description:
-                      "Recognized for developing an innovative healthcare application that improves patient care and medical record management.",
+                      "Built an innovative healthcare app enhancing patient care and records.",
                     year: "2023",
                   },
                   {
                     title:
                       "2nd, Frontend Hackathon – College Tech Event (2023)",
                     description:
-                      "Ranked in the top 1% of contributors to React.js, with over 50 pull requests merged into the core repository.",
+                      "Secured 2nd place for an advanced JavaScript-based frontend project.",
                     year: "2022",
                   },
                   {
                     title: "Completed 50+ DSA problems on LeetCode",
                     description:
-                      'Delivered a talk on "Performance Optimization in Large-Scale React Applications" at ReactConf 2022.',
-                    year: "2022",
+                      "Solved diverse DSA problems to strengthen algorithmic skills.",
+                    year: "2024",
                   },
                 ].map((achievement, index) => (
                   <motion.div
@@ -1198,6 +1200,7 @@ const About = () => {
                 aria-label="Close certificate view"
               >
                 <X size={20} />
+                {/* <X size={20} /> */}
               </button>
 
               {/* Certificate Header */}

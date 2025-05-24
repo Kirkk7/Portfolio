@@ -80,27 +80,30 @@ const Home = () => {
               animate="visible"
               className="order-2 lg:order-1"
             >
-              <motion.span
-                variants={itemVariants}
-                className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-tight"
-              >
-                Kirtan Kapatel
-              </motion.span>
+              <div className="flex justify-center md:justify-start">
+                <motion.span
+                  variants={itemVariants}
+                  className="font-heading text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-tight"
+                >
+                  Kirtan Kapatel
+                </motion.span>
+              </div>
               <div className="p-2"></div>
-              <motion.span
-                variants={itemVariants}
-                className="inline-block  px-4 py-3 rounded-full bg-dark-800 text-primary-500 text-sm font-medium mb-6 mr-2"
-              >
-                Full-Stack Developer
-              </motion.span>
+              <div className="flex justify-center md:justify-start">
+                <motion.span
+                  variants={itemVariants}
+                  className="inline-block  px-4 py-3 rounded-full bg-dark-800 text-primary-500 text-sm font-medium mb-6 mr-2"
+                >
+                  Full-Stack Developer
+                </motion.span>
 
-              <motion.span
-                variants={itemVariants}
-                className="inline-block  px-4 py-3 rounded-full bg-dark-800 text-primary-500 text-sm font-medium mb-6"
-              >
-                UI/UX Designer
-              </motion.span>
-
+                <motion.span
+                  variants={itemVariants}
+                  className="inline-block  px-4 py-3 rounded-full bg-dark-800 text-primary-500 text-sm font-medium mb-6"
+                >
+                  UI/UX Designer
+                </motion.span>
+              </div>
               <motion.h1
                 variants={itemVariants}
                 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
@@ -175,18 +178,18 @@ const Home = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative w-full h-[500px] overflow-hidden rounded-2xl">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary-800/40 to-secondary-800/40 mix-blend-multiply z-10 rounded-2xl"></div>
+              <div className="-left-1.5 relative w-full h-[500px] overflow-hidden rounded-2xl ">
+                <div className=" absolute inset-0 bg-gradient-to-b from-primary-800/40 to-secondary-800/40 mix-blend-multiply z-10 rounded-2xl"></div>
                 <img
-                  src="kk2.jpg"
+                  src="kk3.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Developer portrait"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover rounded-2xl "
                 />
               </div>
 
               {/* Tech stack floating card */}
               <motion.div
-                className="absolute -bottom-5 -left-5 md:left-auto md:-right-5 bg-dark-800 p-4 rounded-lg shadow-xl border border-dark-700 z-20 max-w-[260px]"
+                className="absolute -bottom-5 -left-5 md:left-auto md:-right-10 bg-dark-800 p-4 rounded-lg shadow-xl border border-dark-700 z-20 max-w-[235px]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
@@ -228,6 +231,7 @@ const Home = () => {
                 variant="ghost"
                 icon={Lucide.ArrowRight}
                 iconPosition="right"
+                className="w-36"
               >
                 View All
               </Button>
