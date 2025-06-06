@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Menu, X, Code, Terminal } from "lucide-react";
+import { Menu, X, Code } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +30,13 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setShowNavbar(window.scrollY > 10);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const navLinks = [
     { to: "/", label: "Home" },
@@ -51,13 +58,17 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="container mx-auto px-4 py-4">
-        <nav className="flex justify-between items-center">
+        <nav className="z-[999] flex justify-between items-center">
           <NavLink
             to="/"
             className="flex items-center gap-2 text-white font-heading font-bold text-xl"
           >
             <div className="relative">
-              <Terminal className="text-primary-500" size={32} />
+              <img
+                src="/kkbg.png"
+                alt="Kirtan Kapatel"
+                className="rounded-full object-cover border-2 border-primary-500 w-8 h-8"
+              />
             </div>
             <span className="gradient-text text-xl md:text-2xl lg:text-3xl">
               Kirtan Kapatel
@@ -75,7 +86,7 @@ const Navbar = () => {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active" : ""}`
+                  `cursor-pointer nav-link ${isActive ? "active" : ""}`
                 }
               >
                 {link.label}

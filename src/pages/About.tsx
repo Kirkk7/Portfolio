@@ -848,11 +848,11 @@ const About = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <div className="flex justify-center md:justify-start">
+                {/* <div className="flex justify-center md:justify-start">
                   <Button variant="primary" icon={Briefcase}>
                     Hire Me
                   </Button>
-                </div>
+                </div> */}
               </motion.div>
             </div>
             <motion.div
@@ -861,9 +861,9 @@ const About = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="kk4.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="kk2.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                 />
@@ -977,7 +977,8 @@ const About = () => {
                       { name: "JavaScript / TypeScript", level: 90 },
                       { name: "HTML5 / CSS3", level: 85 },
                       { name: "Tailwind CSS", level: 90 },
-                      { name: "Rszor Pages (ASP.NET)", level: 95 },
+                      { name: "jQuery", level: 80 },
+                      { name: "Razor Pages (ASP.NET)", level: 95 },
                     ].map((skill, index) => (
                       <motion.div key={index} variants={itemVariants}>
                         <div className="flex justify-between mb-1">
@@ -1009,7 +1010,8 @@ const About = () => {
                       { name: "ASP.NET Core MVC", level: 90 },
                       { name: "MongoDB / Mongoose", level: 80 },
                       { name: "SQLite", level: 75 },
-                      { name: "MySQL", level: 70 },
+                      { name: "MySQL", level: 95 },
+                      { name: "PHP", level: 90 },
                     ].map((skill, index) => (
                       <motion.div key={index} variants={itemVariants}>
                         <div className="flex justify-between mb-1">

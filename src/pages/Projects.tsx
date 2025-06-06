@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Jinarth Infotech Website",
+    title: "Infotech Website",
     description:
       "A modern website for a software development company featuring service highlights, client testimonials, and interactive UI.",
     image: "jn.png",

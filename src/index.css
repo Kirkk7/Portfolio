@@ -17,7 +17,9 @@ body {
   @apply bg-dark-900 text-white min-h-screen p-0 m-0;
   overflow-x: hidden;
 }
-
+.navbar {
+  will-change: transform;
+}
 .section-padding {
   @apply py-16 md:py-24;
 }
@@ -36,7 +38,8 @@ body {
 }
 
 .custom-cursor {
-  @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-primary-500 mix-blend-difference pointer-events-none z-50;
+  z-index: 9999;
+  @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-primary-500 mix-blend-difference pointer-events-none;
   transform: translate(-50%, -50%);
   transition: width 0.2s, height 0.2s, background 0.2s;
 }

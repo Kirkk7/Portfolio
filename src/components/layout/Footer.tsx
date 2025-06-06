@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-2 gradient-text">
-              DevPortfolio
+              Kirtan Kapatel
             </h3>
             <p className="text-dark-200 max-w-md">
               Full-stack developer specializing in building exceptional digital
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="border-t border-dark-700 mt-8 pt-8 text-center md:text-left">
           <div className="flex flex-col md:flex-row justify-between items-center text-dark-400 text-sm">
-            <p>© {currentYear} DevPortfolio. All rights reserved.</p>
+            <p>© {currentYear} Kirtan's Portfolio. All rights reserved.</p>
             {/* <div className="mt-4 md:mt-0 flex gap-6">
               <a href="#" className="hover:text-primary-500 transition-colors">
                 Privacy Policy

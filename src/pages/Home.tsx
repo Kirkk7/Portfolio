@@ -8,9 +8,10 @@ import { FloatingPaths } from "../components/layout/FloatingPaths";
 // import FloatingBubbles from "../components/layout/FloatingBubbles";
 const images = [
   // { src: "/kk1.jpg", shape: "rounded-xl" },
-  { src: "/kk2.jpg", shape: "rounded-xl" },
-  { src: "/kk3.jpg", shape: "rounded-2xl" },
-  { src: "/kk4.jpg", shape: "rounded-none" },
+  { src: "/kk5.png", shape: "rounded-xl" },
+  { src: "/kk6.png", shape: "rounded-2xl" },
+  { src: "/kk7.png", shape: "rounded-none" },
+  { src: "/kk8.jpg", shape: "rounded-none" },
 ];
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -160,16 +161,16 @@ const Home = () => {
 
               <motion.div
                 variants={itemVariants}
-                className="mt-5 flex items-center gap-8"
+                className="mt-5 flex items-center gap-8 "
               >
-                <div className="flex gap-6">
+                <div className="flex gap-6 ">
                   <a
                     href="https://github.com/Kirkk7"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-dark-300 hover:text-primary-500 transition-colors"
+                    className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
                   >
-                    <Lucide.Github size={20} />
+                    <Lucide.Github size={20} className="cursor-pointer" />
                   </a>
                   <a
                     href="https://linkedin.com/in/kirtanhpatel"
@@ -177,7 +178,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     className="text-dark-300 hover:text-primary-500 transition-colors"
                   >
-                    <Lucide.Linkedin size={20} />
+                    <Lucide.Linkedin size={20} className="cursor-pointer" />
                   </a>
                 </div>
                 <div className="h-8 w-px bg-dark-700"></div>

@@ -26,10 +26,10 @@ const Experience = () => {
     },
     {
       id: 2,
-      role: "Full Stack Developer",
+      role: "Web Development Intern",
       company: "Jinarth Infotech",
-      location: "Anand, Gujarat, India",
-      duration: "May 2024 - Present",
+      location: "Remote",
+      duration: "Dec 2024 - May 2025",
       description:
         "Skilled in building responsive web applications from front-end to back-end. Focused on performance, scalability, and user experience.",
       achievements: [
@@ -46,7 +46,7 @@ const Experience = () => {
       role: "Software Developer Intern",
       company: "Humming Byte Technologies",
       location: "Remote",
-      duration: "Nov 2024- Apr 2025",
+      duration: "Nov 2024 - Apr 2025",
       description:
         "Skilled in designing, coding, and maintaining efficient software solutions.",
       achievements: [
@@ -63,6 +63,23 @@ const Experience = () => {
       ],
       website: "https://hmbyte.com/",
       logo: "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    },
+    {
+      id: 4,
+      role: "Web Developer",
+      company: "VT Infotech",
+      location: "Anand, Gujarat, India",
+      duration: "May 2024 - Present",
+      description:
+        "Skilled in designing, coding, and maintaining efficient software solutions.",
+      achievements: [
+        "Contributed to building and testing essential software components, enhancing stability.",
+        "Worked closely with peers to deliver feature updates within project timelines.",
+        "Adopted and utilized clean coding standards to improve code clarity and upkeep.",
+      ],
+      tech: ["UI/UX Design", "MERN Stack", "PHP", "VB.NET"],
+      website: "www.virtuaninfotech.com",
+      logo: "https://images.pexels.com/photos/1181273/pexels-photo-1181273.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
   ];
 
