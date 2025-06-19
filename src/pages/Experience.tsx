@@ -125,7 +125,7 @@ const Experience = () => {
               roles, responsibilities, and key achievements over the years.
             </p>
             <div className="flex justify-center">
-              <a href="/Kirtan_Kapatel.pdf" download>
+              <a href="/KirtanKapatel.pdf" download>
                 <Button variant="primary" icon={Briefcase}>
                   Download Resume
                 </Button>

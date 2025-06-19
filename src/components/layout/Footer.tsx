@@ -18,24 +18,24 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-6 justify-center ">
             <a
               href="https://github.com/Kirkk7"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-dark-300 hover:text-primary-500 transition-colors"
+              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
               aria-label="GitHub"
             >
-              <Lucide.Github size={20} />
+              <Lucide.Github size={20} className="cursor-pointer" />
             </a>
             <a
               href="https://linkedin.com/in/kirtanhpatel"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-dark-300 hover:text-primary-500 transition-colors"
+              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
               aria-label="LinkedIn"
             >
-              <Lucide.Linkedin size={20} />
+              <Lucide.Linkedin size={20} className="cursor-pointer" />
             </a>
             {/* <a
               href="https://twitter.com"
@@ -48,10 +48,10 @@ const Footer = () => {
             </a> */}
             <a
               href="mailto:pkachhiya888@gmail.com"
-              className="text-dark-300 hover:text-primary-500 transition-colors"
+              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
               aria-label="Email"
             >
-              <Lucide.Mail size={20} />
+              <Lucide.Mail size={20} className="cursor-pointer" />
             </a>
           </div>
         </div>

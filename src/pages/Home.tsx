@@ -143,7 +143,7 @@ const Home = () => {
                 variants={itemVariants}
                 className="flex flex-wrap gap-4"
               >
-                <a href="/Kirtan_Kapatel.pdf" download>
+                <a href="/KirtanKapatel.pdf" download>
                   <Button variant="primary" icon={Lucide.Download}>
                     Download Resume
                   </Button>
@@ -266,9 +266,17 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
+                title: "Deepseek Clone",
+                description:
+                  "A full-stack MERN-based DeepSeek clone featuring a responsive sidebar, chat interface, and seamless UI.",
+                image: "Deepseek.png",
+                tags: ["MERN", "JWT", "React Router", "Axios", "Bcrypt"],
+                link: "#",
+              },
+              {
                 title: "Personal Portfolio",
                 description:
-                  "A responsive full-stack web developer portfolio with project showcases and contact integration",
+                  "A responsive full-stack web developer portfolio with project showcases and contact integration.",
                 image: "portfolio.png",
                 tags: ["React", "TypeScript", "Framer Motion"],
                 link: "#",

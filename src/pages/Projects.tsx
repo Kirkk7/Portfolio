@@ -13,6 +13,32 @@ import SectionTitle from "../components/shared/SectionTitle";
 const projects = [
   {
     id: 1,
+    title: "Deepseek Clone",
+    description:
+      "A full-stack MERN-based DeepSeek clone featuring a responsive sidebar, chat interface, and seamless UI.",
+    image: "Deepseek.png",
+    categories: ["fullstack"],
+    tech: [
+      "React",
+      "Node",
+      "MongoDB",
+      "Express",
+      "JWT",
+      "React Router",
+      "Tailwind CSS",
+      "Framer Motion",
+      "OpenAI API",
+      "Axios",
+      "dotenv",
+      "CORS",
+      "Bcrypt",
+    ],
+    demoLink: "#",
+    githubLink: "#",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Personal Portfolio Website",
     description:
       "A responsive full-stack web developer portfolio with dynamic project showcases and contact integration.",
@@ -31,7 +57,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "HD Globe Trade Website",
     description:
       "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
@@ -43,7 +69,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Infotech Website",
     description:
       "A modern website for a software development company featuring service highlights, client testimonials, and interactive UI.",
@@ -55,7 +81,7 @@ const projects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Pharmacy Management System",
     description:
       "A complete pharmacy management system with inventory, billing, and user authentication built using HTML, CSS, JavaScript, and PHP.",
@@ -67,7 +93,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Library Management System",
     description:
       "A desktop-based library management system developed with VB.NET and SQLClient for efficient book tracking, member management, and issue-return operations.",
@@ -79,7 +105,7 @@ const projects = [
     featured: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "F.I.R Management System",
     description:
       "A web-based F.I.R. management system built with HTML, CSS, JavaScript, and PHP for filing, tracking, and managing police reports efficiently.",
