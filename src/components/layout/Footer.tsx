@@ -23,19 +23,19 @@ const Footer = () => {
               href="https://github.com/Kirkk7"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
+              className="text-dark-300 hover:text-primary-500 transition-colors "
               aria-label="GitHub"
             >
-              <Lucide.Github size={20} className="cursor-pointer" />
+              <Lucide.Github size={20} />
             </a>
             <a
               href="https://linkedin.com/in/kirtanhpatel"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
+              className="text-dark-300 hover:text-primary-500 transition-colors"
               aria-label="LinkedIn"
             >
-              <Lucide.Linkedin size={20} className="cursor-pointer" />
+              <Lucide.Linkedin size={20} />
             </a>
             {/* <a
               href="https://twitter.com"
@@ -47,11 +47,11 @@ const Footer = () => {
               <Lucide.Twitter size={20} />
             </a> */}
             <a
-              href="mailto:pkachhiya888@gmail.com"
-              className="text-dark-300 hover:text-primary-500 transition-colors cursor-pointer"
+              href="mailto:khk20082003@gmail.com"
+              className="text-dark-300 hover:text-primary-500 transition-colors "
               aria-label="Email"
             >
-              <Lucide.Mail size={20} className="cursor-pointer" />
+              <Lucide.Mail size={20} />
             </a>
           </div>
         </div>

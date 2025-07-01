@@ -58,18 +58,6 @@ const projects = [
   },
   {
     id: 3,
-    title: "HD Globe Trade Website",
-    description:
-      "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
-    image: "hdglobe.png",
-    categories: ["frontend"],
-    tech: ["React", "GSAP", "Tailwind CSS", "Material UI", "Formspree"],
-    demoLink: "https://hdglobetrade.com/",
-    githubLink: "#",
-    featured: true,
-  },
-  {
-    id: 4,
     title: "Infotech Website",
     description:
       "A modern website for a software development company featuring service highlights, client testimonials, and interactive UI.",
@@ -80,6 +68,19 @@ const projects = [
     githubLink: "#",
     featured: true,
   },
+  {
+    id: 4,
+    title: "HD Globe Trade Website",
+    description:
+      "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
+    image: "hdglobe.png",
+    categories: ["frontend"],
+    tech: ["React", "GSAP", "Tailwind CSS", "Material UI", "Formspree"],
+    demoLink: "https://hdglobetrade.com/",
+    githubLink: "#",
+    featured: false,
+  },
+
   {
     id: 5,
     title: "Pharmacy Management System",

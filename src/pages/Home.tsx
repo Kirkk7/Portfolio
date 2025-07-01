@@ -289,14 +289,14 @@ const Home = () => {
                 tags: ["React", "Framer Motion", "GSAP"],
                 link: "https://jinarthinfotech.com/",
               },
-              {
-                title: "Hd Globe Trade Website",
-                description:
-                  "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
-                image: "hdglobe.png",
-                tags: ["React", "Smooth Scrolling", "Animations"],
-                link: "https://hdglobetrade.com/",
-              },
+              // {
+              //   title: "Hd Globe Trade Website",
+              //   description:
+              //     "A professional website for an import-export company showcasing global services, product catalog, and inquiry forms.",
+              //   image: "hdglobe.png",
+              //   tags: ["React", "Smooth Scrolling", "Animations"],
+              //   link: "https://hdglobetrade.com/",
+              // },
             ].map((project, index) => (
               <motion.div
                 key={index}
