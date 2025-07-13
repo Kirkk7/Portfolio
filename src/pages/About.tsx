@@ -577,6 +577,7 @@
 import type React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import {
   Briefcase,
   GraduationCap,
@@ -1200,7 +1201,7 @@ const About = () => {
                     key={index}
                     variants={itemVariants}
                     className="flex gap-4 p-4 rounded-lg hover:bg-dark-700 transition-colors
-                   max-sm:flex-col max-sm:gap-3 max-sm:p-3"
+                   max-sm:flex-col max-sm:gap-2 max-sm:p-3"
                   >
                     {/* Icon */}
                     <div
@@ -1212,11 +1213,11 @@ const About = () => {
 
                     {/* Text Content */}
                     <div className="flex-1">
-                      <div className="flex items-center flex-wrap gap-2 mb-2">
+                      <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2 max-sm:mb-1">
                         <h3 className="text-xl font-bold max-sm:text-base">
                           {achievement.title}
                         </h3>
-                        <span className="px-2 py-1 rounded bg-dark-700 text-primary-500 text-xs max-sm:text-[10px]">
+                        <span className="px-2 py-1 rounded bg-dark-700 text-primary-500 text-xs md:ml-2 max-sm:text-[10px] max-sm:self-start">
                           {achievement.year}
                         </span>
                       </div>
