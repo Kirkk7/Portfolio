@@ -101,7 +101,7 @@ const Home = () => {
               <div className="flex justify-center md:justify-start">
                 <motion.span
                   variants={itemVariants}
-                  className="font-heading text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-tight"
+                  className="font-heading text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent drop-shadow-lg tracking-tight"
                 >
                   Kirtan Kapatel
                 </motion.span>

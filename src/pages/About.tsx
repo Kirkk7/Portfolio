@@ -654,6 +654,34 @@ const About = () => {
 
   const certificates: Certificate[] = [
     {
+      title: "Data Science & Analytics",
+      issuer: "HP Foundation & HP Life",
+      date: "July 2025",
+      image: "Datascience.png",
+      view: "https://www.life-global.org/en/course/344-data-science-and-analytics",
+    },
+    {
+      title: "Cybersecurity",
+      issuer: "Tech Mahindra Foundation",
+      date: "July 2025",
+      image: "Cybersecurity.png",
+      view: "#",
+    },
+    {
+      title: "AI Aware",
+      issuer: "Intel And Digital India Corporation",
+      date: "July 2025",
+      image: "AIaware.png",
+      view: "#",
+    },
+    {
+      title: "AI Appritiate",
+      issuer: "Intel And Digital India Corporation",
+      date: "July 2025",
+      image: "AIappritiate.png",
+      view: "#",
+    },
+    {
       title: "MongoDB Bootcamp",
       issuer: "LetsUpgrade",
       date: "July 2025",
@@ -871,7 +899,7 @@ const About = () => {
             >
               <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="kk2.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  src="kk1.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt="Professional headshot"
                   className="w-full h-full object-cover"
                 />
