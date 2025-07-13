@@ -591,8 +591,8 @@ import FloatingBubbles from "../components/layout/FloatingBubbles";
 
 const tabs = [
   { id: "education", label: "Education", icon: GraduationCap },
-  { id: "skills", label: "Skills", icon: Code },
   { id: "certificates", label: "Certificates", icon: Award },
+  { id: "skills", label: "Skills", icon: Code },
   { id: "achievements", label: "Achievements", icon: CheckCircle },
 ];
 
@@ -907,13 +907,18 @@ const About = () => {
               </div>
               {/* Experience badge */}
               <motion.div
-                className="absolute top-4 right-4 bg-dark-800 p-4 rounded-lg shadow-xl border border-primary-700"
+                className="absolute top-4 right-4 bg-dark-800 p-4 rounded-lg shadow-xl border border-primary-700
+             max-sm:top-auto max-sm:bottom-2 max-sm:right-2 max-sm:p-2"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                <h3 className="text-xl font-bold gradient-text">1+</h3>
-                <p className="text-dark-300 text-sm">Years Experience</p>
+                <h3 className="text-xl font-bold gradient-text max-sm:text-lg">
+                  1+
+                </h3>
+                <p className="text-dark-300 text-sm max-sm:text-xs">
+                  Years Experience
+                </p>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -1167,14 +1172,19 @@ const About = () => {
               >
                 {[
                   {
-                    title: "Nominated for Best Project (2024)",
+                    title: "AI FOR ALL Badges ",
                     description:
-                      "Built an innovative healthcare app enhancing patient care and records.",
-                    year: "2023",
+                      "Earn two badges: AI Aware and AI Appreciate from CBSE Board and Digital India in collaboration with INTEL.",
+                    year: "2025",
                   },
                   {
-                    title:
-                      "2nd, Frontend Hackathon – College Tech Event (2023)",
+                    title: "Nominated for Best Project",
+                    description:
+                      "Built an innovative healthcare app enhancing patient care and records.",
+                    year: "2024",
+                  },
+                  {
+                    title: "2nd, Frontend Hackathon – College Tech Event",
                     description:
                       "Secured 2nd place for an advanced JavaScript-based frontend project.",
                     year: "2022",
@@ -1189,21 +1199,30 @@ const About = () => {
                   <motion.div
                     key={index}
                     variants={itemVariants}
-                    className="flex gap-4 p-4 rounded-lg hover:bg-dark-700 transition-colors"
+                    className="flex gap-4 p-4 rounded-lg hover:bg-dark-700 transition-colors
+                   max-sm:flex-col max-sm:gap-3 max-sm:p-3"
                   >
-                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-900/30 text-primary-500 flex-shrink-0 mt-1">
-                      <Award size={24} />
+                    {/* Icon */}
+                    <div
+                      className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-900/30 text-primary-500 flex-shrink-0 mt-1
+                        max-sm:mt-0 max-sm:w-10 max-sm:h-10"
+                    >
+                      <Award size={24} className="max-sm:w-5 max-sm:h-5" />
                     </div>
-                    <div>
-                      <div className="flex flex-col md:flex-row md:items-center gap-2 mb-2">
-                        <h3 className="text-xl font-bold">
+
+                    {/* Text Content */}
+                    <div className="flex-1">
+                      <div className="flex items-center flex-wrap gap-2 mb-2">
+                        <h3 className="text-xl font-bold max-sm:text-base">
                           {achievement.title}
                         </h3>
-                        <span className="px-2 py-1 rounded bg-dark-700 text-primary-500 text-xs md:ml-2">
+                        <span className="px-2 py-1 rounded bg-dark-700 text-primary-500 text-xs max-sm:text-[10px]">
                           {achievement.year}
                         </span>
                       </div>
-                      <p className="text-dark-200">{achievement.description}</p>
+                      <p className="text-dark-200 max-sm:text-sm">
+                        {achievement.description}
+                      </p>
                     </div>
                   </motion.div>
                 ))}
